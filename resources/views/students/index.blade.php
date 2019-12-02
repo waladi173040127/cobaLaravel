@@ -9,6 +9,11 @@
 		<div class="col-6">
 			<h2>Daftar Students</h2>
 			 <a href="/create" class="btn btn-primary mb-2">Tambah data Mahasiswa</a>
+			 @if (session('status'))
+			 	<div class="alert alert-success">
+			 		{{session('status')}}
+			 	</div>
+			 @endif 
 			<table class="table">
 			  <thead class="thead-dark">
 			    <tr>
